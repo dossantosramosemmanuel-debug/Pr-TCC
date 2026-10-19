@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7f0">
+  <meta name="description" content="Peça comida fresca e receba onde estiver.">
+  <title>M&S | Delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brand.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="live-dot"></span> Pedidos abertos <span class="announcement-divider">·</span> entrega média em 35–50 min</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" data-view="home" aria-label="M&S, início"><span class="brand-mark">M<span>&</span>S</span><span class="brand-copy"><strong>M&S</strong><small>COMIDA FEITA COM CARINHO</small></span></a>
+    <div class="header-location"><span class="location-icon">⌖</span><span><small>ENTREGAR EM</small><strong id="header-neighborhood">Escolha seu endereço</strong></span><button class="text-button" id="address-button">Alterar</button></div>
+    <div class="header-actions"><button class="icon-button account-trigger" id="account-button" aria-label="Minha conta" title="Minha conta">♙</button><button class="cart-header" id="header-cart-button"><span>Seu pedido</span><span class="cart-header-count" id="header-cart-count">0</span></button></div>
+  </header>
+  <nav class="main-nav" aria-label="Navegação principal"><div class="nav-inner"><a class="nav-link active" href="#inicio" data-view="home">Início</a><a class="nav-link" href="#cardapio" data-view="menu">Cardápio</a><button class="nav-link" data-view="about">Sobre nós</button><button class="nav-link" data-view="orders">Meus pedidos</button><button class="nav-link nav-admin" data-view="admin">Painel da loja <span class="admin-lock">↗</span></button><span class="nav-open"><i></i> Aberto hoje até 22h</span></div></nav>
+
+  <main id="home-view">
+    <section class="hero wrap" id="inicio">
+      <div class="hero-copy"><div class="eyebrow"><span>●</span> PANQUECAS, BURRITOS E CREPES</div><h1>Seu dia merece<br>um <em>final feliz.</em></h1><p>Receitas preparadas na hora, recheios caprichados e sabores para deixar seu dia mais gostoso.</p><div class="hero-actions"><a class="button button-dark" href="#cardapio" data-view="menu">Explorar o cardápio <span>↘</span></a><div class="hero-rating"><span class="stars">★★★★★</span><strong>4,9</strong><small>+1.200 pedidos</small></div></div><div class="hero-perks"><span>✳ Feito na hora</span><span>◷ 35–50 min</span><span>♡ Ingredientes frescos</span></div></div>
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1200&q=85" alt="Panquecas fofinhas com frutas e calda"><div class="hero-stamp"><span>O QUERIDINHO</span><strong>da casa</strong><span>feito na hora</span></div><div class="hero-image-caption"><strong>Panqueca de frutas vermelhas</strong><span>Massa fofinha, frutas frescas e calda da casa</span></div></div>
+    </section>
+    <section class="quick-info wrap" aria-label="Informações da loja"><div><span class="info-icon">◷</span><span><small>ENTREGA ESTIMADA</small><strong>35–50 min</strong></span></div><div><span class="info-icon">⌖</span><span><small>TAXA DE ENTREGA</small><strong>A partir de R$ 5,00</strong></span></div><div><span class="info-icon">R$</span><span><small>PEDIDO MÍNIMO</small><strong>R$ 25,00</strong></span></div><div><span class="info-icon">✓</span><span><small>FUNCIONAMENTO</small><strong>Hoje, 18h–22h</strong></span></div></section>
+    <section class="home-featured wrap">
+      <div class="section-heading"><div><div class="eyebrow">FEITO PARA DAR ÁGUA NA BOCA</div><h2>Favoritos da vizinhança</h2></div><button class="button button-dark" data-view="menu">Ver cardápio completo <span>↗</span></button></div>
+      <div class="product-grid" id="home-product-grid" aria-live="polite"></div>
+    </section>
+    <section class="closing-note wrap"><div><span class="closing-spark">✳</span><span><strong>Um pedido feito com carinho muda o dia.</strong><small>Valeu por escolher a gente. Bom apetite!</small></span></div><a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer" class="whatsapp-link">Fale com a loja <span>↗</span></a></section>
+  </main>
+
+  <main id="menu-view" class="wrap secondary-view hidden">
+    <section class="menu-section" id="cardapio">
+      <div class="section-heading"><div><div class="eyebrow">FEITO PARA DAR ÁGUA NA BOCA</div><h1>Cardápio</h1><p>Escolha seus favoritos, personalize e adicione ao pedido.</p></div><label class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Buscar no cardápio" aria-label="Buscar produtos"><kbd>⌘ K</kbd></label></div>
+      <div class="category-list" id="category-list" aria-label="Categorias"></div>
+      <div class="menu-subheading"><div><h3 id="menu-title">Mais pedidos</h3><span id="menu-count">Escolhas que já conquistaram a vizinhança</span></div><button class="sort-button" id="sort-button">Mais populares <span>⌄</span></button></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="empty-products"><span>⌕</span><strong>Nenhum prato por aqui</strong><p>Tente outro termo ou escolha uma categoria.</p></div>
+    </section>
+    <section class="closing-note"><div><span class="closing-spark">✳</span><span><strong>Um pedido feito com carinho muda o dia.</strong><small>Valeu por escolher a gente. Bom apetite!</small></span></div><a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer" class="whatsapp-link">Fale com a loja <span>↗</span></a></section>
+  </main>
+
+  <main id="orders-view" class="wrap secondary-view hidden"><div class="page-title"><div class="eyebrow">SUA CONTA</div><h1>Meus pedidos</h1><p>Acompanhe entregas e encontre seus favoritos.</p></div><div id="customer-orders" class="customer-order-list"></div><section class="favorites-section"><div class="section-heading"><div><div class="eyebrow">GUARDADOS PARA DEPOIS</div><h2>Seus favoritos</h2></div></div><div id="favorite-grid" class="product-grid"></div></section></main>
+
+  <main id="about-view" class="wrap secondary-view about-page hidden">
+    <section class="about-hero"><div class="about-hero-copy"><div class="eyebrow">COMIDA FEITA COM CARINHO</div><h1>Mais sabor.<br><em>Mais encontro.</em></h1><p>A M&S acredita que uma boa refeição aproxima as pessoas. Por isso, cada pedido é preparado com cuidado, ingredientes frescos e receitas pensadas para tornar o dia mais gostoso.</p><button class="button button-dark" data-view="menu">Conheça nosso cardápio <span>↗</span></button></div><div class="about-photo"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85" alt="Mesa com pratos preparados para compartilhar"><span>DA NOSSA COZINHA<br>PARA A SUA MESA</span></div></section>
+    <section class="about-story"><div class="eyebrow">NOSSA HISTÓRIA</div><h2>Uma cozinha de bairro,<br>feita para compartilhar.</h2><div class="about-story-copy"><p>A M&S nasceu da vontade de fazer comida gostosa, sem complicação. Nossa ideia é simples: escolher bons ingredientes, preparar tudo com atenção e entregar uma experiência acolhedora em cada pedido.</p><p>Do primeiro preparo à última mordida, queremos que você sinta o cuidado de uma comida feita na hora. É assim que construímos nossa história: um prato e uma boa conversa de cada vez.</p><span class="about-demo-note">Texto de apresentação de demonstração. Personalize com a história real da sua loja antes de publicar.</span></div></section>
+    <section class="about-details"><article class="about-detail"><span class="about-detail-icon">⌖</span><div class="eyebrow">ONDE ESTAMOS</div><h3 id="about-store-name">M&S</h3><p id="about-address">Rua das Flores, 120 · São Paulo, SP</p><small>Endereço de demonstração: confirme os dados da loja antes de divulgar.</small><a id="about-map-link" class="text-link" href="https://maps.google.com" target="_blank" rel="noreferrer">Ver no mapa ↗</a></article><article class="about-detail"><span class="about-detail-icon">◷</span><div class="eyebrow">PRA VOCÊ SE PROGRAMAR</div><h3>Funcionamento</h3><p id="about-open-status">Pedidos abertos</p><small>Preparo estimado: <strong id="about-preparation">35 min</strong></small><a class="text-link" data-view="menu" href="#cardapio">Pedir agora ↗</a></article><article class="about-detail"><span class="about-detail-icon">♡</span><div class="eyebrow">FALE COM A GENTE</div><h3>Atendimento próximo</h3><p>Dúvidas sobre ingredientes ou seu pedido? Nossa equipe pode ajudar.</p><a id="about-whatsapp-link" class="text-link" href="#" target="_blank" rel="noreferrer">Conversar pelo WhatsApp ↗</a><small id="about-contact-note">Configure o WhatsApp da loja no painel para ativar o contato.</small></article></section>
+    <section class="about-last"><span>Uma boa refeição começa com uma boa escolha.</span><button class="button button-dark" data-view="menu">Escolher meu pedido <span>↗</span></button></section>
+  </main>
+
+  <main id="admin-view" class="admin-layout hidden">
+    <aside class="admin-sidebar"><a class="brand admin-brand" href="#inicio" data-view="home"><span class="brand-mark">M<span>&</span>S</span><span class="brand-copy"><strong>M&S</strong><small>GESTÃO DA LOJA</small></span></a><div class="admin-label">OPERAÇÃO</div><button class="admin-tab active" data-admin-tab="overview"><span>▦</span> Visão geral</button><button class="admin-tab" data-admin-tab="orders"><span>▤</span> Pedidos <b id="pending-badge">0</b></button><button class="admin-tab" data-admin-tab="products"><span>◈</span> Cardápio</button><button class="admin-tab" data-admin-tab="customers"><span>♙</span> Clientes</button><div class="admin-label admin-label-lower">NEGÓCIO</div><button class="admin-tab" data-admin-tab="reports"><span>⌁</span> Relatórios</button><button class="admin-tab" data-admin-tab="settings"><span>⚙</span> Configurações</button><div class="admin-sidebar-bottom"><span class="admin-avatar">MS</span><span><strong>Administração</strong><small>Modo demonstração</small></span><button id="logout-button" title="Sair">↗</button></div></aside>
+    <section class="admin-content"><header class="admin-topbar"><div><span class="admin-mobile-brand">M&S / </span><span id="admin-breadcrumb">Visão geral</span></div><div class="admin-top-actions"><span class="demo-pill"><i></i> DADOS DE DEMONSTRAÇÃO</span><button class="button button-dark button-small" id="view-store-button">Ver loja ↗</button></div></header>
+      <div class="admin-panel" id="admin-panel"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#inicio" data-view="home"><span class="brand-mark">M<span>&</span>S</span><span class="brand-copy"><strong>M&S</strong><small>COMIDA FEITA COM CARINHO</small></span></a><span>Rua das Flores, 120 · São Paulo, SP</span><span>© 2026 M&S</span><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a></div></footer>
+  <button class="mobile-cart hidden" id="mobile-cart-button"><span>Ver meu pedido</span><strong id="mobile-cart-total">R$ 0,00</strong><span class="mobile-cart-count" id="mobile-cart-count">0</span></button>
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+  <dialog id="product-dialog" class="modal product-modal"><button class="modal-close" data-close="product-dialog" aria-label="Fechar">×</button><div id="product-detail"></div></dialog>
+  <dialog id="checkout-dialog" class="modal checkout-modal"><button class="modal-close" data-close="checkout-dialog" aria-label="Fechar">×</button><div id="checkout-content"></div></dialog>
+  <dialog id="auth-dialog" class="modal auth-modal"><button class="modal-close" data-close="auth-dialog" aria-label="Fechar">×</button><div id="auth-content"></div></dialog>
+  <dialog id="address-dialog" class="modal auth-modal"><button class="modal-close" data-close="address-dialog" aria-label="Fechar">×</button><div id="address-content"></div></dialog>
+  <dialog id="product-admin-dialog" class="modal admin-form-modal"><button class="modal-close" data-close="product-admin-dialog" aria-label="Fechar">×</button><div id="product-admin-content"></div></dialog>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"M&S","servesCuisine":"Panquecas, burritos e crepes","priceRange":"R$ 25–60","address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"}}</script>
+</body>
+</html>
