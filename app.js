@@ -7,15 +7,16 @@ const productsSeed = [
   { id: 'pan1', name: 'Panqueca de frutas vermelhas', category: 'Panquecas', description: 'Massa fofinha, frutas vermelhas frescas e calda da casa.', price: 29.9, oldPrice: 34.9, tag: 'Mais pedida', image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80', available: true, stock: 24, ingredients: 'Farinha, leite, ovos, frutas vermelhas e calda', featured: true },
   { id: 'pan2', name: 'Panqueca de banana e doce de leite', category: 'Panquecas', description: 'Banana dourada, doce de leite cremoso e canela.', price: 27.9, oldPrice: 0, tag: 'Favorita', image: 'https://images.unsplash.com/photo-1575853121743-60c24f0a7502?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Farinha, leite, ovos, banana, doce de leite e canela', featured: true },
   { id: 'pan3', name: 'Panqueca de chocolate', category: 'Panquecas', description: 'Massa de cacau com ganache e morangos frescos.', price: 31.9, oldPrice: 0, tag: 'Chocolate', image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Farinha, cacau, leite, ovos, ganache e morangos', featured: true },
-  { id: 'bur1', name: 'Burrito de carne mexicana', category: 'Burritos', description: 'Carne temperada, arroz, feijão, queijo e pico de gallo.', price: 36.9, oldPrice: 41.9, tag: 'Mais pedido', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 20, ingredients: 'Tortilla, carne bovina, arroz, feijão, queijo e pico de gallo', featured: true },
-  { id: 'bur2', name: 'Burrito de frango barbecue', category: 'Burritos', description: 'Frango grelhado, queijo, milho e molho barbecue.', price: 34.9, oldPrice: 0, tag: 'Grelhado', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Tortilla, frango grelhado, queijo, milho e molho barbecue', featured: true },
-  { id: 'bur3', name: 'Burrito veggie', category: 'Burritos', description: 'Feijão temperado, arroz, abacate, milho e folhas frescas.', price: 32.9, oldPrice: 0, tag: 'Vegetariano', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 14, ingredients: 'Tortilla, feijão, arroz, abacate, milho e folhas frescas', featured: true },
+  { id: 'bur4', name: 'Burrito de Costela', category: 'Burritos', description: 'Costela desfiada, arroz, feijão, queijo e molho especial.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Costela desfiada, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
+  { id: 'bur5', name: 'Burrito de frango', category: 'Burritos', description: 'Frango temperado, arroz, feijão, queijo e legumes frescos.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Frango em cubos, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos, pimenta de biquino', featured: true },
+  { id: 'bur6', name: 'Burrito de Carne suina', category: 'Burritos', description: 'Pernil de porco em cubos com ingredientes frescos e picantes.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Pernil de porco em cubos, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
+  { id: 'bur7', name: 'Burrito Vegetariano', category: 'Burritos', description: 'Ovo, queijo, vegetais frescos e guacamole com Doritos crocante.', price: 30, oldPrice: 0, tag: 'Vegetariano', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 14, ingredients: 'Ovo, queijo, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
   { id: 'cre1', name: 'Crepe de frango com catupiry', category: 'Crepes', description: 'Massa leve recheada com frango temperado e catupiry.', price: 33.9, oldPrice: 0, tag: 'Da casa', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 17, ingredients: 'Massa de crepe, frango desfiado e catupiry', featured: true },
   { id: 'cre2', name: 'Crepe de queijo e tomate', category: 'Crepes', description: 'Queijos derretidos, tomate fresco e manjericão.', price: 29.9, oldPrice: 0, tag: 'Leve', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: 'Massa de crepe, muçarela, queijo prato, tomate e manjericão', featured: true },
   { id: 'cre3', name: 'Crepe de chocolate e banana', category: 'Crepes', description: 'Crepe quentinho com chocolate e banana caramelizada.', price: 28.9, oldPrice: 0, tag: 'Doce', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Massa de crepe, chocolate e banana caramelizada', featured: true }
 ];
 const defaultData = {
-  catalogVersion: 2, products: productsSeed, categories: categoriesSeed.slice(1).map(item => item.name),
+  catalogVersion: 11, products: productsSeed, categories: categoriesSeed.slice(1).map(item => item.name),
   orders: [], customers: [], favorites: [], cart: [], coupon: '',
   profile: null, address: '', neighborhood: '',
   settings: { name: 'M&S', phone: '', whatsapp: '', address: 'Rua das Flores, 120 · São Paulo, SP', minOrder: 25, preparation: 35, open: true, guestCheckout: true, paymentMethods: ['Pix', 'Dinheiro', 'Cartão de crédito', 'Cartão de débito'], areas: [{ name: 'Centro', fee: 5, minimum: 25 }, { name: 'Vila Mariana', fee: 7, minimum: 30 }, { name: 'Pinheiros', fee: 8, minimum: 30 }] }
@@ -32,7 +33,65 @@ function readStore() {
       state.categories = [...defaultData.categories, ...(stored.categories || []).filter(category => !legacyCategories.has(category) && !defaultData.categories.includes(category))];
       state.cart = (stored.cart || []).filter(item => !legacyIds.has(item.productId));
       state.favorites = (stored.favorites || []).filter(id => !legacyIds.has(id));
-      state.catalogVersion = 2;
+    } else if ((stored.catalogVersion || 0) < 3) {
+      const newProductIds = new Set(['bur4', 'bur5', 'bur6', 'bur7']);
+      const missingProducts = productsSeed.filter(product => newProductIds.has(product.id) && !stored.products.some(saved => saved.id === product.id));
+      state.products = [...state.products, ...structuredClone(missingProducts)];
+    }
+    if ((stored.catalogVersion || 0) < 4) {
+      const costela = productsSeed.find(product => product.id === 'bur4');
+      const savedCostela = state.products.find(product => product.id === 'bur4');
+      if (costela && savedCostela) savedCostela.ingredients = costela.ingredients;
+    }
+    if ((stored.catalogVersion || 0) < 5) {
+      const removedProductIds = new Set(['bur1', 'bur2', 'bur3']);
+      state.products = state.products.filter(product => !removedProductIds.has(product.id));
+      state.cart = state.cart.filter(item => !removedProductIds.has(item.productId));
+      state.favorites = state.favorites.filter(id => !removedProductIds.has(id));
+    }
+    if ((stored.catalogVersion || 0) < 6) {
+      const frango = productsSeed.find(product => product.id === 'bur5');
+      const savedFrango = state.products.find(product => product.id === 'bur5');
+      if (frango && savedFrango) savedFrango.ingredients = frango.ingredients;
+    }
+    if ((stored.catalogVersion || 0) < 7) {
+      const porco = productsSeed.find(product => product.id === 'bur6');
+      const savedPorco = state.products.find(product => product.id === 'bur6');
+      if (porco && savedPorco) {
+        savedPorco.description = porco.description;
+        savedPorco.ingredients = porco.ingredients;
+      }
+    }
+    if ((stored.catalogVersion || 0) < 8) {
+      const ingredientCorrections = new Map([
+        ['bur4', 'Costela desfiada, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino'],
+        ['bur5', 'Frango em cubos, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos, pimenta de biquino']
+      ]);
+      state.products.forEach(product => {
+        if (ingredientCorrections.has(product.id)) product.ingredients = ingredientCorrections.get(product.id);
+      });
+    }
+    if ((stored.catalogVersion || 0) < 9) {
+      const vegetariano = productsSeed.find(product => product.id === 'bur7');
+      const savedVegetariano = state.products.find(product => product.id === 'bur7');
+      if (vegetariano && savedVegetariano) {
+        savedVegetariano.description = vegetariano.description;
+        savedVegetariano.ingredients = vegetariano.ingredients;
+      }
+    }
+    if ((stored.catalogVersion || 0) < 10) {
+      const porco = productsSeed.find(product => product.id === 'bur6');
+      const savedPorco = state.products.find(product => product.id === 'bur6');
+      if (porco && savedPorco) savedPorco.ingredients = porco.ingredients;
+    }
+    if ((stored.catalogVersion || 0) < 11) {
+      const burritoPrices = new Map([
+        ['bur4', 35], ['bur5', 35], ['bur6', 35], ['bur7', 30]
+      ]);
+      state.products.forEach(product => {
+        if (burritoPrices.has(product.id)) product.price = burritoPrices.get(product.id);
+      });
+      state.catalogVersion = 11;
       localStorage.setItem(STORE_KEY, JSON.stringify(state));
     }
     return state;
