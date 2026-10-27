@@ -4,9 +4,11 @@ const categoriesSeed = [
   { name: 'Todos', icon: '✳' }, { name: 'Panquecas', icon: '◉' }, { name: 'Burritos', icon: '▰' }, { name: 'Crepes', icon: '◇' }
 ];
 const productsSeed = [
-  { id: 'pan1', name: 'Panqueca de frutas vermelhas', category: 'Panquecas', description: 'Massa fofinha, frutas vermelhas frescas e calda da casa.', price: 29.9, oldPrice: 34.9, tag: 'Mais pedida', image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80', available: true, stock: 24, ingredients: 'Farinha, leite, ovos, frutas vermelhas e calda', featured: true },
-  { id: 'pan2', name: 'Panqueca de banana e doce de leite', category: 'Panquecas', description: 'Banana dourada, doce de leite cremoso e canela.', price: 27.9, oldPrice: 0, tag: 'Favorita', image: 'https://images.unsplash.com/photo-1575853121743-60c24f0a7502?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Farinha, leite, ovos, banana, doce de leite e canela', featured: true },
-  { id: 'pan3', name: 'Panqueca de chocolate', category: 'Panquecas', description: 'Massa de cacau com ganache e morangos frescos.', price: 31.9, oldPrice: 0, tag: 'Chocolate', image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Farinha, cacau, leite, ovos, ganache e morangos', featured: true },
+  { id: 'pan1', name: 'Panqueca de carne', category: 'Panquecas', description: 'Massa macia recheada com carne moída e temperos do chef.', price: 29.9, oldPrice: 34.9, tag: 'Mais pedida', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80', available: true, stock: 24, ingredients: 'Massa de panqueca, carne moída, queijo e temperos', featured: true },
+  { id: 'pan2', name: 'Panqueca de frango', category: 'Panquecas', description: 'Frango suculento, queijo derretido e sabor caseiro.', price: 27.9, oldPrice: 0, tag: 'Favorita', image: 'https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Massa de panqueca, frango desfiado, queijo e temperos', featured: true },
+  { id: 'pan3', name: 'Panqueca de calabresa', category: 'Panquecas', description: 'Calabresa crocante, queijo e molho especial em uma massa leve.', price: 31.9, oldPrice: 0, tag: 'Especial', image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Massa de panqueca, calabresa, queijo e molho', featured: true },
+  { id: 'pan4', name: 'Panqueca de coração', category: 'Panquecas', description: 'Recheio de coração com cremosidade e sabor irresistível.', price: 32.9, oldPrice: 0, tag: 'Premium', image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80', available: true, stock: 14, ingredients: 'Massa de panqueca, coração, queijo e temperos', featured: true },
+  { id: 'pan5', name: 'Panqueca de brócolis', category: 'Panquecas', description: 'Brócolis fresquinho, queijo derretido e sabor equilibrado.', price: 28.9, oldPrice: 0, tag: 'Saudável', image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: 'Massa de panqueca, brócolis, queijo e temperos', featured: true },
   { id: 'bur4', name: 'Burrito de Costela', category: 'Burritos', description: 'Costela desfiada, arroz, feijão, queijo e molho especial.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Costela desfiada, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
   { id: 'bur5', name: 'Burrito de frango', category: 'Burritos', description: 'Frango temperado, arroz, feijão, queijo e legumes frescos.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Frango em cubos, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos, pimenta de biquino', featured: true },
   { id: 'bur6', name: 'Burrito de Carne suina', category: 'Burritos', description: 'Pernil de porco em cubos com ingredientes frescos e picantes.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Pernil de porco em cubos, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
@@ -16,7 +18,7 @@ const productsSeed = [
   { id: 'cre3', name: 'Crepe de chocolate e banana', category: 'Crepes', description: 'Crepe quentinho com chocolate e banana caramelizada.', price: 28.9, oldPrice: 0, tag: 'Doce', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Massa de crepe, chocolate e banana caramelizada', featured: true }
 ];
 const defaultData = {
-  catalogVersion: 11, products: productsSeed, categories: categoriesSeed.slice(1).map(item => item.name),
+  catalogVersion: 12, products: productsSeed, categories: categoriesSeed.slice(1).map(item => item.name),
   orders: [], customers: [], favorites: [], cart: [], coupon: '',
   profile: null, address: '', neighborhood: '',
   settings: { name: 'M&S', phone: '', whatsapp: '', address: 'Rua das Flores, 120 · São Paulo, SP', minOrder: 25, preparation: 35, open: true, guestCheckout: true, paymentMethods: ['Pix', 'Dinheiro', 'Cartão de crédito', 'Cartão de débito'], areas: [{ name: 'Centro', fee: 5, minimum: 25 }, { name: 'Vila Mariana', fee: 7, minimum: 30 }, { name: 'Pinheiros', fee: 8, minimum: 30 }] }
@@ -92,6 +94,18 @@ function readStore() {
         if (burritoPrices.has(product.id)) product.price = burritoPrices.get(product.id);
       });
       state.catalogVersion = 11;
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    }
+    if ((stored.catalogVersion || 0) < 12) {
+      const oldPancakeIds = new Set(['pan1', 'pan2', 'pan3']);
+      const newPancakes = productsSeed.filter(product => product.category === 'Panquecas');
+      state.products = [
+        ...state.products.filter(product => product.category !== 'Panquecas'),
+        ...structuredClone(newPancakes)
+      ];
+      state.cart = (state.cart || []).filter(item => !oldPancakeIds.has(item.productId));
+      state.favorites = (state.favorites || []).filter(id => !oldPancakeIds.has(id));
+      state.catalogVersion = 12;
       localStorage.setItem(STORE_KEY, JSON.stringify(state));
     }
     return state;
