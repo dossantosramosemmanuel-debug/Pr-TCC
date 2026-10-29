@@ -4,21 +4,37 @@ const categoriesSeed = [
   { name: 'Todos', icon: '✳' }, { name: 'Panquecas', icon: '◉' }, { name: 'Burritos', icon: '▰' }, { name: 'Crepes', icon: '◇' }
 ];
 const productsSeed = [
-  { id: 'pan1', name: 'Panqueca de carne', category: 'Panquecas', description: 'Massa macia recheada com carne moída e temperos do chef.', price: 29.9, oldPrice: 34.9, tag: 'Mais pedida', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2LVW07bNNiHH_vkizTwvEqsqf2BlY_CGjrI0djnfMCQ&s=10', available: true, stock: 24, ingredients: 'Massa de panqueca, carne moída, queijo e temperos', featured: true },
-  { id: 'pan2', name: 'Panqueca de frango', category: 'Panquecas', description: 'Frango suculento, queijo derretido e sabor caseiro.', price: 27.9, oldPrice: 0, tag: 'Favorita', image: 'https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Massa de panqueca, frango desfiado, queijo e temperos', featured: true },
-  { id: 'pan3', name: 'Panqueca de calabresa', category: 'Panquecas', description: 'Calabresa crocante, queijo e molho especial em uma massa leve.', price: 31.9, oldPrice: 0, tag: 'Especial', image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Massa de panqueca, calabresa, queijo e molho', featured: true },
-  { id: 'pan4', name: 'Panqueca de coração', category: 'Panquecas', description: 'Recheio de coração com cremosidade e sabor irresistível.', price: 32.9, oldPrice: 0, tag: 'Premium', image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80', available: true, stock: 14, ingredients: 'Massa de panqueca, coração, queijo e temperos', featured: true },
-  { id: 'pan5', name: 'Panqueca de brócolis', category: 'Panquecas', description: 'Brócolis fresquinho, queijo derretido e sabor equilibrado.', price: 28.9, oldPrice: 0, tag: 'Saudável', image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: 'Massa de panqueca, brócolis, queijo e temperos', featured: true },
+  { id: 'pan1', name: 'Panqueca de carne', category: 'Panquecas', description: 'Massa macia recheada com carne moída e temperos do chef.', price: 7, oldPrice: 0, tag: 'Mais pedida', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2LVW07bNNiHH_vkizTwvEqsqf2BlY_CGjrI0djnfMCQ&s=10', available: true, stock: 24, ingredients: 'Massa de panqueca, carne moída, queijo e temperos', featured: true },
+  { id: 'pan2', name: 'Panqueca de frango', category: 'Panquecas', description: 'Frango suculento, queijo derretido e sabor caseiro.', price: 6, oldPrice: 0, tag: 'Favorita', image: 'https://receitatodahora.com.br/wp-content/uploads/2024/10/panqueca-de-frango-3009-1-800x800.jpg', available: true, stock: 18, ingredients: 'Massa de panqueca, frango desfiado, queijo e temperos', featured: true },
+  { id: 'pan3', name: 'Panqueca de calabresa', category: 'Panquecas', description: 'Calabresa crocante, queijo e molho especial em uma massa leve.', price: 6, oldPrice: 0, tag: 'Especial', image: 'https://www.estadao.com.br/paladar/receita/panqueca-de-carne/?srsltid=AYCX9vJWj0SnDwslr3Bo1w-ArUhoguTnSQbdVoVffSuEaKBKEGU2eEpO', available: true, stock: 16, ingredients: 'Massa de panqueca, calabresa, queijo e molho', featured: true },
+  { id: 'pan4', name: 'Panqueca de coração', category: 'Panquecas', description: 'Recheio de coração com cremosidade e sabor irresistível.', price: 8, oldPrice: 0, tag: 'Premium', image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80', available: true, stock: 14, ingredients: 'Massa de panqueca, coração, queijo e temperos', featured: true },
+  { id: 'pan5', name: 'Panqueca de brócolis', category: 'Panquecas', description: 'Brócolis fresquinho, queijo derretido e sabor equilibrado.', price: 6, oldPrice: 0, tag: 'Saudável', image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: 'Massa de panqueca, brócolis, queijo e temperos', featured: true },
   { id: 'bur4', name: 'Burrito de Costela', category: 'Burritos', description: 'Costela desfiada, arroz, feijão, queijo e molho especial.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Costela desfiada, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
   { id: 'bur5', name: 'Burrito de frango', category: 'Burritos', description: 'Frango temperado, arroz, feijão, queijo e legumes frescos.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 18, ingredients: 'Frango em cubos, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos, pimenta de biquino', featured: true },
   { id: 'bur6', name: 'Burrito de Carne suina', category: 'Burritos', description: 'Pernil de porco em cubos com ingredientes frescos e picantes.', price: 35, oldPrice: 0, tag: 'Novo', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Pernil de porco em cubos, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
   { id: 'bur7', name: 'Burrito Vegetariano', category: 'Burritos', description: 'Ovo, queijo, vegetais frescos e guacamole com Doritos crocante.', price: 30, oldPrice: 0, tag: 'Vegetariano', image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80', available: true, stock: 14, ingredients: 'Ovo, queijo, alface, tomate, cebola roxa, picles, creme azedo, guacamole, Doritos e pimenta de biquino', featured: true },
-  { id: 'cre1', name: 'Crepe de frango com catupiry', category: 'Crepes', description: 'Massa leve recheada com frango temperado e catupiry.', price: 33.9, oldPrice: 0, tag: 'Da casa', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 17, ingredients: 'Massa de crepe, frango desfiado e catupiry', featured: true },
-  { id: 'cre2', name: 'Crepe de queijo e tomate', category: 'Crepes', description: 'Queijos derretidos, tomate fresco e manjericão.', price: 29.9, oldPrice: 0, tag: 'Leve', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: 'Massa de crepe, muçarela, queijo prato, tomate e manjericão', featured: true },
-  { id: 'cre3', name: 'Crepe de chocolate e banana', category: 'Crepes', description: 'Crepe quentinho com chocolate e banana caramelizada.', price: 28.9, oldPrice: 0, tag: 'Doce', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 16, ingredients: 'Massa de crepe, chocolate e banana caramelizada', featured: true }
+  { id: 'cre-sal1', name: 'calabresa com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal2', name: 'calabresa com requeijão', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal3', name: 'presunto com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal4', name: 'salsicha com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal5', name: 'frango com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal6', name: 'frango com requeijão', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal7', name: 'coração com cheddar', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal8', name: 'bacon com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-sal9', name: 'milho com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc1', name: 'chocolate preto', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc2', name: 'chocolate branco', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc3', name: 'chocolate com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc4', name: 'princesinha (chocolate preto e branco)', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc5', name: 'chokito', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc6', name: 'prestigio', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc7', name: 'charge', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc8', name: 'doce de leite', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc9', name: 'doce de leite com queijo', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true },
+  { id: 'cre-doc10', name: 'romeu e julieta (Goiabada com queijo)', category: 'Crepes', description: '', price: 12, oldPrice: 0, tag: '', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80', available: true, stock: 15, ingredients: '', featured: true }
 ];
 const defaultData = {
-  catalogVersion: 12, products: productsSeed, categories: categoriesSeed.slice(1).map(item => item.name),
+  catalogVersion: 17, products: productsSeed, categories: categoriesSeed.slice(1).map(item => item.name),
   orders: [], customers: [], favorites: [], cart: [], coupon: '',
   profile: null, address: '', neighborhood: '',
   settings: { name: 'M&S', phone: '', whatsapp: '', address: 'Rua das Flores, 120 · São Paulo, SP', minOrder: 25, preparation: 35, open: true, guestCheckout: true, paymentMethods: ['Pix', 'Dinheiro', 'Cartão de crédito', 'Cartão de débito'], areas: [{ name: 'Centro', fee: 5, minimum: 25 }, { name: 'Vila Mariana', fee: 7, minimum: 30 }, { name: 'Pinheiros', fee: 8, minimum: 30 }] }
@@ -108,6 +124,60 @@ function readStore() {
       state.catalogVersion = 12;
       localStorage.setItem(STORE_KEY, JSON.stringify(state));
     }
+    if ((stored.catalogVersion || 0) < 13) {
+      const pancakePrices = new Map([
+        ['pan1', 7], ['pan2', 6], ['pan3', 6]
+      ]);
+      state.products.forEach(product => {
+        if (pancakePrices.has(product.id)) {
+          product.price = pancakePrices.get(product.id);
+          product.oldPrice = 0;
+        }
+      });
+      state.catalogVersion = 13;
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    }
+    if ((stored.catalogVersion || 0) < 14) {
+      const pancakePrices = new Map([
+        ['pan4', 8], ['pan5', 6]
+      ]);
+      state.products.forEach(product => {
+        if (pancakePrices.has(product.id)) {
+          product.price = pancakePrices.get(product.id);
+          product.oldPrice = 0;
+        }
+      });
+      state.catalogVersion = 14;
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    }
+    if ((stored.catalogVersion || 0) < 15) {
+      state.products.forEach(product => {
+        if (product.category === 'Crepes') {
+          product.price = 12;
+          product.oldPrice = 0;
+        }
+      });
+      state.catalogVersion = 15;
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    }
+    if ((stored.catalogVersion || 0) < 16) {
+      const newCrepes = productsSeed.filter(product => product.category === 'Crepes');
+      state.products = [
+        ...state.products.filter(product => product.category !== 'Crepes'),
+        ...structuredClone(newCrepes)
+      ];
+      state.catalogVersion = 16;
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    }
+    if ((stored.catalogVersion || 0) < 17) {
+      const newCrepes = productsSeed.filter(product => product.category === 'Crepes');
+      state.products = [
+        ...state.products.filter(product => product.category !== 'Crepes'),
+        ...structuredClone(newCrepes)
+      ];
+      state.catalogVersion = 17;
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    }
     return state;
   } catch { return structuredClone(defaultData); }
 }
@@ -158,7 +228,7 @@ function renderCartCount() {
 function productCard(product) {
   const favorite = state.favorites.includes(product.id);
   const unavailable = !product.available || Number(product.stock) <= 0;
-  return `<article class="product-card"><div class="product-photo"><img src="${escapeHTML(product.image)}" alt="${escapeHTML(product.name)}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=75'"><span class="product-tag ${product.tag ? '' : 'hidden'}">${escapeHTML(product.tag)}</span><button class="favorite-button ${favorite ? 'is-favorite' : ''}" data-action="favorite" data-id="${escapeHTML(product.id)}" aria-label="${favorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">${favorite ? '♥' : '♡'}</button></div><div class="product-info"><div class="product-heading"><h4>${escapeHTML(product.name)}</h4><span class="product-price">${product.oldPrice > product.price ? `<del>${money(product.oldPrice)}</del>` : ''}${money(product.price)}</span></div><p class="product-description">${escapeHTML(product.description)}</p><div class="product-bottom"><span class="product-category">${unavailable ? 'Indisponível' : escapeHTML(product.category)}</span><button class="add-product-button" data-action="${unavailable ? 'unavailable' : 'product'}" data-id="${escapeHTML(product.id)}" ${unavailable ? 'disabled' : ''} aria-label="${unavailable ? 'Produto indisponível' : 'Ver produto'}">${unavailable ? '–' : '+'}</button></div></div></article>`;
+  return `<article class="product-card"><div class="product-photo"><img src="${escapeHTML(product.image)}" alt="${escapeHTML(product.name)}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=75'"><span class="product-tag ${product.tag ? '' : 'hidden'}">${escapeHTML(product.tag)}</span><button class="favorite-button ${favorite ? 'is-favorite' : ''}" data-action="favorite" data-id="${escapeHTML(product.id)}" aria-label="${favorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">${favorite ? '♥' : '♡'}</button></div><div class="product-info"><div class="product-heading"><h4>${escapeHTML(product.name)}</h4>${product.category === 'Crepes' ? '' : `<span class="product-price">${product.oldPrice > product.price ? `<del>${money(product.oldPrice)}</del>` : ''}${money(product.price)}</span>`}</div>${product.category === 'Crepes' ? '' : `<p class="product-description">${escapeHTML(product.description)}</p>`}<div class="product-bottom"><span class="product-category">${unavailable ? 'Indisponível' : escapeHTML(product.category)}</span><button class="add-product-button" data-action="${unavailable ? 'unavailable' : 'product'}" data-id="${escapeHTML(product.id)}" ${unavailable ? 'disabled' : ''} aria-label="${unavailable ? 'Produto indisponível' : 'Ver produto'}">${unavailable ? '–' : '+'}</button></div></div></article>`;
 }
 function renderCategories() {
   const names = [...new Set([...state.categories, ...state.products.map(product => product.category)])];
@@ -176,7 +246,19 @@ function renderShop() {
   if (activeCategory !== 'Todos') products = products.filter(product => product.category === activeCategory);
   if (query) products = products.filter(product => `${product.name} ${product.description} ${product.category} ${product.ingredients}`.toLocaleLowerCase('pt-BR').includes(query));
   if (sortPopular && activeCategory === 'Todos' && !query) products.sort((a, b) => Number(b.featured) - Number(a.featured));
-  $('#product-grid').innerHTML = products.map(productCard).join('');
+  const productGrid = $('#product-grid');
+  const sortButton = $('#sort-button');
+  if (activeCategory === 'Crepes' && !query) {
+    const savory = products.filter(product => !product.id.startsWith('cre-doc'));
+    const sweet = products.filter(product => product.id.startsWith('cre-doc'));
+    productGrid.classList.add('crepe-menu-layout');
+    productGrid.innerHTML = `<section class="crepe-prices"><h3>Preços dos crepes</h3><div><span>Simples</span><strong>R$ 12,00</strong></div><div><span>Duplo</span><strong>R$ 18,00</strong></div><div><span>Triplo</span><strong>R$ 22,00</strong></div></section><section class="crepe-flavor-group"><h3>Salgados</h3><div class="product-grid">${savory.map(productCard).join('')}</div></section><section class="crepe-flavor-group"><h3>Doces</h3><div class="product-grid">${sweet.map(productCard).join('')}</div></section>`;
+    sortButton.classList.add('hidden');
+  } else {
+    productGrid.classList.remove('crepe-menu-layout');
+    productGrid.innerHTML = products.map(productCard).join('');
+    sortButton.classList.toggle('hidden', activeCategory === 'Crepes');
+  }
   $('#empty-products').classList.toggle('hidden', products.length > 0);
   $('#menu-title').textContent = query ? 'Resultados da busca' : activeCategory === 'Todos' ? 'Mais pedidos' : activeCategory;
   $('#menu-count').textContent = query ? `${products.length} ${products.length === 1 ? 'resultado' : 'resultados'} encontrados` : `${products.length} opções feitas com cuidado`;
@@ -186,9 +268,27 @@ function openProduct(id) {
   const product = byId(id);
   if (!product) return;
   const addons = [{ name: 'Bacon crocante', price: 5 }, { name: 'Queijo extra', price: 4 }, { name: 'Cebola caramelizada', price: 3 }];
-  $('#product-detail').innerHTML = `<img class="product-detail-image" src="${escapeHTML(product.image)}" alt="${escapeHTML(product.name)}"><div class="product-detail-body"><div class="eyebrow">${escapeHTML(product.category)}</div><h2>${escapeHTML(product.name)}</h2><p>${escapeHTML(product.description)}</p><p><strong>Ingredientes:</strong> ${escapeHTML(product.ingredients || 'Consulte a loja sobre os ingredientes.')}</p><div class="detail-price">${money(product.price)}</div><div class="option-title">Adicione algo a mais</div><div class="option-list">${addons.map((addon, index) => `<label class="option-row"><input type="checkbox" name="product-addon" value="${index}">${escapeHTML(addon.name)}<span>+ ${money(addon.price)}</span></label>`).join('')}</div><div class="option-title">Observação para a cozinha</div><div class="field"><textarea id="product-note" maxlength="200" placeholder="Ex.: sem cebola"></textarea></div><div class="option-title">Quantidade</div><div class="quantity-picker"><button data-action="detail-qty" data-delta="-1">−</button><strong id="detail-quantity">1</strong><button data-action="detail-qty" data-delta="1">+</button></div><button class="button button-dark modal-cta" data-action="add-custom" data-id="${escapeHTML(product.id)}"><span>Adicionar ao pedido</span><span id="detail-add-total">${money(product.price)}</span></button></div>`;
+  const isCrepe = product.category === 'Crepes';
+  const crepeSizes = [{ name: 'Simples', price: 12 }, { name: 'Duplo', price: 18 }, { name: 'Triplo', price: 22 }];
+  const initialPrice = isCrepe ? crepeSizes[0].price : product.price;
+  const crepeFlavors = state.products.filter(item => item.category === 'Crepes');
+  $('#product-detail').innerHTML = `<img class="product-detail-image" src="${escapeHTML(product.image)}" alt="${escapeHTML(product.name)}"><div class="product-detail-body"><div class="eyebrow">${escapeHTML(product.category)}</div><h2>${escapeHTML(product.name)}</h2>${isCrepe ? '' : `<p>${escapeHTML(product.description)}</p><p><strong>Ingredientes:</strong> ${escapeHTML(product.ingredients || 'Consulte a loja sobre os ingredientes.')}</p>`}${isCrepe ? `<label class="option-title" for="crepe-size">Tamanho</label><select id="crepe-size">${crepeSizes.map(size => `<option value="${size.price}" data-size="${size.name}">${size.name} · ${money(size.price)}</option>`).join('')}</select><div class="option-title">Sabores</div><div class="crepe-flavor-options">${crepeFlavors.map(flavor => `<label><input type="checkbox" name="crepe-flavor" value="${escapeHTML(flavor.id)}" ${flavor.id === product.id ? 'checked' : ''}><span>${escapeHTML(flavor.name)}</span></label>`).join('')}</div><small id="crepe-flavor-hint" class="crepe-flavor-hint"></small>` : `<div class="detail-price">${money(product.price)}</div>`}<div class="option-title">Adicione algo a mais</div><div class="option-list">${addons.map((addon, index) => `<label class="option-row"><input type="checkbox" name="product-addon" value="${index}">${escapeHTML(addon.name)}<span>+ ${money(addon.price)}</span></label>`).join('')}</div><div class="option-title">Observação para a cozinha</div><div class="field"><textarea id="product-note" maxlength="200" placeholder="Ex.: sem cebola"></textarea></div><div class="option-title">Quantidade</div><div class="quantity-picker"><button data-action="detail-qty" data-delta="-1">−</button><strong id="detail-quantity">1</strong><button data-action="detail-qty" data-delta="1">+</button></div><button class="button button-dark modal-cta" data-action="add-custom" data-id="${escapeHTML(product.id)}"><span>Adicionar ao pedido</span><span id="detail-add-total">${money(initialPrice)}</span></button></div>`;
   $('#product-dialog').dataset.quantity = '1';
+  updateCrepeFlavorHint();
   showDialog('product-dialog');
+}
+function selectedCrepeFlavors() {
+  return [...document.querySelectorAll('input[name="crepe-flavor"]:checked')].map(input => byId(input.value)).filter(Boolean);
+}
+function crepeFlavorLimit() {
+  return ({ Simples: 1, Duplo: 2, Triplo: 3 })[$('#crepe-size')?.selectedOptions[0]?.dataset.size] || 1;
+}
+function updateCrepeFlavorHint() {
+  const hint = $('#crepe-flavor-hint');
+  if (!hint) return;
+  const required = crepeFlavorLimit();
+  const selected = selectedCrepeFlavors().length;
+  hint.textContent = `Escolha ${required} ${required === 1 ? 'sabor' : 'sabores'} diferentes (${selected} selecionado${selected === 1 ? '' : 's'}).`;
 }
 function selectedAddons() {
   const options = [{ name: 'Bacon crocante', price: 5 }, { name: 'Queijo extra', price: 4 }, { name: 'Cebola caramelizada', price: 3 }];
@@ -200,17 +300,19 @@ function updateDetailTotal() {
   const quantity = Number($('#product-dialog').dataset.quantity || 1);
   const extra = selectedAddons().reduce((sum, addon) => sum + addon.price, 0);
   $('#detail-quantity').textContent = quantity;
-  $('#detail-add-total').textContent = money((product.price + extra) * quantity);
+  const crepePrice = Number($('#crepe-size')?.value);
+  const basePrice = product.category === 'Crepes' && Number.isFinite(crepePrice) ? crepePrice : product.price;
+  $('#detail-add-total').textContent = money((basePrice + extra) * quantity);
 }
-function addCart(product, quantity = 1, addons = [], note = '') {
-  const signature = `${product.id}|${addons.map(addon => addon.name).sort().join(',')}|${note}`;
+function addCart(product, quantity = 1, addons = [], note = '', unitPrice = product.price, size = '') {
+  const signature = `${product.id}|${product.name}|${size}|${addons.map(addon => addon.name).sort().join(',')}|${note}`;
   const existing = state.cart.find(item => item.signature === signature);
   if (existing) existing.quantity += quantity;
-  else state.cart.push({ signature, productId: product.id, name: product.name, unitPrice: product.price, quantity, addons, note });
+  else state.cart.push({ signature, productId: product.id, name: product.name, unitPrice, size, quantity, addons, note });
   persistAndRender();
 }
 function cartItemMarkup(item, index) {
-  const addonLine = item.addons.length ? `<small>${item.addons.map(addon => escapeHTML(addon.name)).join(', ')}</small>` : '';
+  const addonLine = `${item.size ? `<small>${escapeHTML(item.size)}</small>` : ''}${item.addons.length ? `<small>${item.addons.map(addon => escapeHTML(addon.name)).join(', ')}</small>` : ''}`;
   return `<div class="cart-line"><div><strong>${escapeHTML(item.name)}</strong>${addonLine}${item.note ? `<small>Obs.: ${escapeHTML(item.note)}</small>` : ''}<span>${money(item.unitPrice + item.addons.reduce((sum, addon) => sum + addon.price, 0))}</span></div><div class="quantity-picker"><button data-action="cart-qty" data-index="${index}" data-delta="-1">−</button><strong>${item.quantity}</strong><button data-action="cart-qty" data-index="${index}" data-delta="1">+</button><button data-action="remove-cart" data-index="${index}" aria-label="Remover">×</button></div></div>`;
 }
 function renderCartReview() {
@@ -420,7 +522,18 @@ function handleAction(button) {
   if (action === 'detail-qty') { $('#product-dialog').dataset.quantity = String(Math.max(1, Number($('#product-dialog').dataset.quantity || 1) + Number(button.dataset.delta))); updateDetailTotal(); }
   if (action === 'add-custom') {
     const product = byId(id); if (!product) return;
-    addCart(product, Number($('#product-dialog').dataset.quantity || 1), selectedAddons(), $('#product-note').value.trim());
+    const crepeSize = $('#crepe-size')?.selectedOptions[0];
+    const unitPrice = crepeSize ? Number(crepeSize.value) : product.price;
+    let cartProduct = product;
+    if (product.category === 'Crepes') {
+      const flavors = selectedCrepeFlavors();
+      if (flavors.length !== crepeFlavorLimit()) {
+        notify(`Selecione exatamente ${crepeFlavorLimit()} ${crepeFlavorLimit() === 1 ? 'sabor' : 'sabores'} para esse tamanho.`, true);
+        return;
+      }
+      cartProduct = { ...flavors[0], name: flavors.map(flavor => flavor.name).join(' + ') };
+    }
+    addCart(cartProduct, Number($('#product-dialog').dataset.quantity || 1), selectedAddons(), $('#product-note').value.trim(), unitPrice, crepeSize?.dataset.size || '');
     closeDialog('product-dialog'); notify(`${product.name} adicionado ao pedido.`);
   }
   if (action === 'cart-qty') {
@@ -519,6 +632,15 @@ document.addEventListener('change', event => {
     persist(); renderCartReview();
   }
   if (event.target.matches('input[name="product-addon"]')) updateDetailTotal();
+  if (event.target.matches('input[name="crepe-flavor"]')) {
+    const checkedFlavors = document.querySelectorAll('input[name="crepe-flavor"]:checked');
+    if (event.target.checked && checkedFlavors.length > crepeFlavorLimit()) {
+      event.target.checked = false;
+      notify(`Esse tamanho permite até ${crepeFlavorLimit()} ${crepeFlavorLimit() === 1 ? 'sabor' : 'sabores'}.`, true);
+    }
+    updateCrepeFlavorHint();
+  }
+  if (event.target.id === 'crepe-size') { updateCrepeFlavorHint(); updateDetailTotal(); }
   if (event.target.matches('[data-order-status]')) {
     const id = event.target.dataset.orderStatus;
     if (event.target.value === 'Cancelado') {
